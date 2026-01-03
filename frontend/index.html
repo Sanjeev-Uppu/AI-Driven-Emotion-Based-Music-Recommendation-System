@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Emotion Based Music Player</title>
+    <style>
+        body {
+            background: #1c8fc0;
+            color: rgb(235, 196, 3);
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        video {
+            width: 360px;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #emotion {
+            color: #16090e;
+            font-size: 22px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎭 Emotion Based Music Player</h1>
+
+    <video id="video" autoplay playsinline></video><br>
+
+    <button id="startBtn">🎥 Start Camera</button>
+    <button id="detectBtn" disabled>🎯 Detect Emotion</button>
+
+    <div id="emotion"></div>
+
+    <audio id="player" controls></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
